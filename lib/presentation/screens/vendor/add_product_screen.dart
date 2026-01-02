@@ -882,11 +882,11 @@ class _AddProductScreenState extends State<AddProductScreen> {
       return;
     }
 
-    if (_images.isEmpty) {
-      print('❌ [AddProduct] No images added');
-      _showError('Please add at least one product image');
-      return;
-    }
+    // if (_images.isEmpty) {
+    //   print('❌ [AddProduct] No images added');
+    //   _showError('Please add at least one product image');
+    //   return;
+    // }
 
     print('✅ [AddProduct] All validations passed');
 
