@@ -1,6 +1,7 @@
 class ApiConstants {
   // ⚠️ REPLACE WITH YOUR ACTUAL API URL
   static const String baseUrl = 'http://127.0.0.1:8000/api';
+  //static const String baseUrl = 'http://192.168.1.X:8000/api';
   static const String storageUrl = 'http://127.0.0.1:8000/storage';
 
   // Auth Endpoints
@@ -39,4 +40,11 @@ class ApiConstants {
   static String updateAddress(int id) => '$baseUrl/addresses/$id';
   static String deleteAddress(int id) => '$baseUrl/addresses/$id';
   static String setDefaultAddress(int id) => '$baseUrl/addresses/$id/default';
+
+  // Admin User Management
+  static const String adminDashboardOverview = '/admin/dashboard/overview';
+  static const String adminVendors = '/admin/vendors';
+  static const String adminUsers = '/admin/users';
+  static const String adminOrders = '/admin/orders';
+  static const String adminApproveVendor = '/vendor';
 }
